@@ -61,6 +61,29 @@ Ce lab est destiné à un usage **strictement pédagogique et autorisé**.
 
 ---
 
+# 🖼️ Captures du Lab
+
+Ajoute les images dans un dossier :
+
+```text
+/images
+```
+
+Structure recommandée :
+
+```text
+project/
+│
+├── README.md
+└── images/
+    ├── screen1.png
+    ├── screen2.png
+    ├── screen3.png
+    └── ...
+```
+
+---
+
 # 🧩 Architecture du Lab
 
 ```text
@@ -102,25 +125,21 @@ Ce lab est destiné à un usage **strictement pédagogique et autorisé**.
 
 ---
 
+## 📸 Capture
+
+```markdown
+![Préparation Burp](images/screen1.png)
+```
+
+```markdown
+![Proxy Intercept](images/screen2.png)
+```
+
+---
+
 ## 🎯 Pourquoi ?
 
 Le proxy doit d’abord être configuré correctement avant d’intercepter le trafic.
-
----
-
-## ✅ À observer
-
-- Bouton d’interception disponible ;
-- Historique HTTP accessible ;
-- Burp Suite opérationnel.
-
----
-
-## ❌ Erreurs fréquentes
-
-- Interception activée trop tôt ;
-- Navigation bloquée ;
-- Mauvais onglet utilisé.
 
 ---
 
@@ -142,40 +161,23 @@ Le proxy doit d’abord être configuré correctement avant d’intercepter le t
    <ADRESSE_LISTENER>
    ```
 
-Exemple :
-```text
-127.0.0.1:8080
+---
+
+## 📸 Capture
+
+```markdown
+![Proxy Listener](images/screen3.png)
 ```
 
----
-
-## 🎯 Pourquoi ?
-
-Le listener est le point d’entrée réseau du proxy.
-
----
-
-## ✅ À observer
-
-- Listener actif ;
-- Port défini ;
-- Adresse correcte.
-
----
-
-## ❌ Erreurs fréquentes
-
-- Listener désactivé ;
-- Mauvais port ;
-- Loopback inaccessible depuis l’émulateur.
+```markdown
+![Listener Configuration](images/screen4.png)
+```
 
 ---
 
 # 🖥️ Étape 3 — Identifier l’Adresse IP de l’Hôte
 
 ## Procédure
-
-Afficher l’adresse IP locale de la machine hôte.
 
 ### Windows
 
@@ -197,27 +199,11 @@ ip addr
 
 ---
 
-## 🎯 Pourquoi ?
+## 📸 Capture
 
-L’émulateur doit connaître l’adresse du proxy.
-
----
-
-## ✅ À observer
-
-Une IPv4 valide :
-
-```text
-192.168.X.X
+```markdown
+![Adresse IP Host](images/screen7.png)
 ```
-
----
-
-## ❌ Erreurs fréquentes
-
-- Utiliser une IP VPN ;
-- Confondre IP publique et locale ;
-- Interface réseau inactive.
 
 ---
 
@@ -246,25 +232,19 @@ Proxy port     : <PORT_PROXY>
 
 ---
 
-## 🎯 Pourquoi ?
+## 📸 Captures
 
-Sans proxy, le trafic contourne Burp Suite.
+```markdown
+![Configuration WiFi](images/screen8.png)
+```
 
----
+```markdown
+![Proxy Android](images/screen12.png)
+```
 
-## ✅ À observer
-
-- Proxy Manual activé ;
-- Adresse correcte ;
-- Port correct.
-
----
-
-## ❌ Erreurs fréquentes
-
-- Mauvais réseau Wi-Fi ;
-- Port incorrect ;
-- Hostname vide.
+```markdown
+![Advanced Network](images/screen14.png)
+```
 
 ---
 
@@ -282,27 +262,15 @@ Sans proxy, le trafic contourne Burp Suite.
 
 ---
 
-## 🎯 Pourquoi ?
+## 📸 Captures
 
-Valider que la chaîne proxy fonctionne.
+```markdown
+![Navigateur Android](images/screen9.png)
+```
 
----
-
-## ✅ À observer
-
-- Requêtes visibles ;
-- URL ;
-- Méthode ;
-- Code HTTP ;
-- Taille des réponses.
-
----
-
-## ❌ Erreurs fréquentes
-
-- Aucun trafic visible ;
-- Proxy mal configuré ;
-- Listener inaccessible.
+```markdown
+![HTTP History](images/screen10.png)
+```
 
 ---
 
@@ -318,56 +286,23 @@ HTTP history
 
 Observer :
 
-### Onglet Raw
-
 - Méthode HTTP
 - URL
 - Headers
 - Cookies
 - Paramètres
 
-### Onglet Inspector
-
-- Query Parameters
-- Headers
-- Cookies
-
 ---
 
-## 🎯 Pourquoi ?
+## 📸 Captures
 
-L’analyse réseau consiste à comprendre les données échangées.
-
----
-
-## ✅ Éléments importants
-
-### Méthodes HTTP
-
-```http
-GET
-POST
-PUT
-DELETE
+```markdown
+![Analyse Requête](images/screen11.png)
 ```
 
-### Headers fréquents
-
-```http
-User-Agent
-Cookie
-Authorization
-Accept
-Content-Type
+```markdown
+![Request Inspector](images/screen13.png)
 ```
-
----
-
-## ❌ Erreurs fréquentes
-
-- Ignorer les headers ;
-- Confondre cookies et mots de passe ;
-- Analyser sans contexte.
 
 ---
 
@@ -385,24 +320,11 @@ Content-Type
 
 ---
 
-## 🎯 Pourquoi ?
+## 📸 Capture
 
-Comprendre le rôle actif du proxy.
-
----
-
-## ✅ À observer
-
-- Requête suspendue ;
-- Possibilité de Forward ;
-- Différence mode passif / actif.
-
----
-
-## ❌ Erreurs fréquentes
-
-- Oublier de désactiver l’interception ;
-- Bloquer tout le trafic.
+```markdown
+![Intercept Request](images/screen15.png)
+```
 
 ---
 
@@ -416,42 +338,15 @@ Un proxy d’analyse HTTPS nécessite un certificat CA de laboratoire afin que l
 
 ---
 
-## Procédure d’observation
+## 📸 Captures
 
-Dans l’émulateur :
-
-```text
-Install Certificate
+```markdown
+![Encryption Credentials](images/screen17.png)
 ```
 
-Observer les catégories :
-
-- CA Certificate
-- VPN & Apps
-- Wi-Fi Certificate
-
----
-
-## 🎯 Pourquoi ?
-
-Comprendre le modèle de confiance HTTPS.
-
----
-
-## ⚠️ Important
-
-Le certificat CA :
-
-- doit rester temporaire ;
-- doit être utilisé uniquement en laboratoire ;
-- doit être supprimé à la fin.
-
----
-
-## ❌ Erreurs fréquentes
-
-- Installer sur téléphone personnel ;
-- Oublier la suppression.
+```markdown
+![Install Certificate](images/screen18.png)
+```
 
 ---
 
@@ -465,8 +360,6 @@ Le certificat CA :
 Android Emulator + cible autorisée
 ```
 
----
-
 ### 2. Configuration
 
 ```text
@@ -476,26 +369,18 @@ Port Proxy
 Date
 ```
 
----
-
 ### 3. Preuves
 
 - Capture HTTP history ;
 - Détails d’une requête ;
 - Headers observés.
 
----
-
 ### 4. Analyse
-
-Exemples :
 
 - paramètres visibles ;
 - cookies présents ;
 - tokens dans URL ;
 - informations sensibles potentielles.
-
----
 
 ### 5. Recommandations
 
@@ -591,4 +476,5 @@ Type : Observation Réseau Mobile
 Niveau : Débutant / Intermédiaire
 Objectif : Analyse et documentation réseau
 Environnement : Contrôlé et autorisé
+```
 ```
