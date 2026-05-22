@@ -61,32 +61,6 @@ Ce lab est destiné à un usage **strictement pédagogique et autorisé**.
 
 ---
 
-# 📁 Structure du Projet
-
-```text
-project/
-│
-├── README.md
-└── images/
-    ├── screen1.png
-    ├── screen2.png
-    ├── screen3.png
-    ├── screen4.png
-    ├── screen7.png
-    ├── screen8.png
-    ├── screen9.png
-    ├── screen10.png
-    ├── screen11.png
-    ├── screen12.png
-    ├── screen13.png
-    ├── screen14.png
-    ├── screen15.png
-    ├── screen17.png
-    └── screen18.png
-```
-
----
-
 # 🧩 Architecture du Lab
 
 ```text
@@ -132,11 +106,11 @@ Intercept is off
 ## 📸 Captures
 
 <p align="center">
-  <img src="images/screen1.png" width="700">
+  <img src="./screen 1.png" width="700">
 </p>
 
 <p align="center">
-  <img src="images/screen2.png" width="700">
+  <img src="./scrr 2.png" width="700">
 </p>
 
 ---
@@ -187,11 +161,11 @@ Exemple :
 ## 📸 Captures
 
 <p align="center">
-  <img src="images/screen3.png" width="700">
+  <img src="./scree 3.png" width="700">
 </p>
 
 <p align="center">
-  <img src="images/screen4.png" width="700">
+  <img src="./scree 4.png" width="700">
 </p>
 
 ---
@@ -237,7 +211,7 @@ ip addr
 ## 📸 Capture
 
 <p align="center">
-  <img src="images/screen7.png" width="700">
+  <img src="./scree 7.png" width="700">
 </p>
 
 ---
@@ -284,9 +258,9 @@ Proxy port     : <PORT_PROXY>
 ## 📸 Captures
 
 <p align="center">
-  <img src="images/screen8.png" width="250">
-  <img src="images/screen12.png" width="250">
-  <img src="images/screen14.png" width="250">
+  <img src="./scree 8.png" width="250">
+  <img src="./screen 12.png" width="250">
+  <img src="./screen 14.png" width="250">
 </p>
 
 ---
@@ -323,8 +297,8 @@ HTTP history
 ## 📸 Captures
 
 <p align="center">
-  <img src="images/screen9.png" width="300">
-  <img src="images/screen10.png" width="600">
+  <img src="./screen 9.png" width="300">
+  <img src="./scren 10.png" width="600">
 </p>
 
 ---
@@ -366,11 +340,11 @@ Observer :
 ## 📸 Captures
 
 <p align="center">
-  <img src="images/screen11.png" width="600">
+  <img src="./screen 11.png" width="600">
 </p>
 
 <p align="center">
-  <img src="images/screen13.png" width="600">
+  <img src="./screen 13.png" width="600">
 </p>
 
 ---
@@ -431,7 +405,7 @@ Intercept is on
 ## 📸 Capture
 
 <p align="center">
-  <img src="images/screen15.png" width="700">
+  <img src="./scree 15.png" width="700">
 </p>
 
 ---
@@ -462,8 +436,8 @@ Un proxy d’analyse HTTPS nécessite un certificat CA de laboratoire afin que l
 ## 📸 Captures
 
 <p align="center">
-  <img src="images/screen17.png" width="250">
-  <img src="images/screen18.png" width="250">
+  <img src="./scree 17.png" width="250">
+  <img src="./scree 18.png" width="250">
 </p>
 
 ---
